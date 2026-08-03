@@ -109,10 +109,10 @@ export const Hero: React.FC<HeroProps> = () => {
               marginTop: '2px'
             }}
           >
-            DATA ANALYST | AIML SPECIALIST
+            AI & MACHINE LEARNING GRADUATE | FULL STACK DEVELOPER
           </h3>
 
-          {/* Data Analytics Tech Pills */}
+          {/* AI / ML Tech Pills */}
           <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginTop: '2px' }}>
             <span
               style={{
@@ -129,8 +129,8 @@ export const Hero: React.FC<HeroProps> = () => {
                 fontWeight: 600
               }}
             >
-              <BarChart3 size={13} color="var(--accent-red-bright)" />
-              Power BI & SQL
+              <TrendingUp size={13} color="var(--accent-red-bright)" />
+              PyTorch & TensorFlow
             </span>
 
             <span
@@ -148,8 +148,8 @@ export const Hero: React.FC<HeroProps> = () => {
                 fontWeight: 600
               }}
             >
-              <TrendingUp size={13} color="var(--accent-red-bright)" />
-              ML Forecasting
+              <BarChart3 size={13} color="var(--accent-red-bright)" />
+              Generative AI & Gemini API
             </span>
 
             <span
@@ -168,7 +168,7 @@ export const Hero: React.FC<HeroProps> = () => {
               }}
             >
               <Database size={13} color="var(--accent-red-bright)" />
-              Tableau Dashboards
+              Full Stack & Django
             </span>
           </div>
 
@@ -185,7 +185,7 @@ export const Hero: React.FC<HeroProps> = () => {
               letterSpacing: '0.01em'
             }}
           >
-            I am a passionate <strong style={{ color: '#FFFFFF', fontWeight: 700 }}>Data Analyst & AIML Specialist</strong> dedicated to turning complex data into clear, compelling business stories. Skilled in <span style={{ color: 'var(--accent-red-bright)', fontWeight: 600 }}>SQL, Python, Power BI, and Machine Learning</span>, I design intuitive dashboards and analytics pipelines that drive smart decisions. Fueled by curiosity, precision, and a creative problem-solving mindset, I bring fresh energy and data-backed value to every challenge.
+            AI & Machine Learning graduate with hands-on experience in <strong style={{ color: '#FFFFFF', fontWeight: 700 }}>Machine Learning, Deep Learning, NLP, Generative AI</strong>, and predictive modeling. Experienced in developing intelligent systems using <span style={{ color: 'var(--accent-red-bright)', fontWeight: 600 }}>Python, Django, Google Gemini AI, DevOps, PyTorch, TensorFlow, and Scikit-learn</span>.
           </p>
 
           {/* Location Tag */}
@@ -288,7 +288,7 @@ export const Hero: React.FC<HeroProps> = () => {
                 lineHeight: 1
               }}
             >
-              8.41
+              8.49
             </span>
             <div style={{ display: 'flex', flexDirection: 'column' }}>
               <span
@@ -437,6 +437,7 @@ export const Hero: React.FC<HeroProps> = () => {
         @media (max-width: 1024px) {
           .hero-grid-layout {
             grid-template-columns: 1fr 1fr !important;
+            padding-top: 160px !important;
           }
           .hero-stats-column {
             flex-direction: row !important;
@@ -446,8 +447,24 @@ export const Hero: React.FC<HeroProps> = () => {
           }
         }
         @media (max-width: 768px) {
+          #hero {
+            padding-left: 16px !important;
+            padding-right: 16px !important;
+            padding-top: 80px !important;
+          }
           .hero-grid-layout {
             grid-template-columns: 1fr !important;
+            padding-top: 90px !important;
+            gap: 24px !important;
+          }
+          .hero-grid-layout img {
+            max-height: 440px !important;
+            margin: 0 auto;
+          }
+          .hero-stats-column {
+            flex-direction: column !important;
+            gap: 20px !important;
+            align-items: flex-start !important;
           }
           .floating-hero-badge {
             display: none !important;

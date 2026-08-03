@@ -92,17 +92,17 @@ export function generateRAGResponse(query: string): string {
 
   // 5. ABOUT / BIO / WHO IS TEJASWINI / OVERVIEW
   if (q.includes('who') || q.includes('about') || q.includes('bio') || q.includes('yourself') || q.includes('tejaswini') || q.includes('teju') || q.includes('summary') || q.includes('intro') || q.includes('background')) {
-    return `👩‍💻 **Tejaswini Y — Data Analyst & AIML Specialist**\n\n• **Role**: Data Analyst | AIML Specialist | Data Visualization & Insights\n• **Education**: B.E. in Artificial Intelligence & Machine Learning at **Acharya Institute of Technology** (**8.41 CGPA**, 2022–2026)\n• **Core Stack**: SQL, Power BI, Tableau, Python (Pandas, NumPy, Scikit-Learn), Plotly, Django, Machine Learning\n• **Location**: Bengaluru, Karnataka, India\n• **Contact**: tejaswini.y2004teju@gmail.com | +91 9036877702`;
+    return `👩‍💻 **Tejaswini Y — AI & Machine Learning Graduate & Full Stack Developer**\n\n• **Role**: AI & Machine Learning Graduate | Full Stack Developer @ Mindset IT Solutions\n• **Education**: B.E. in Artificial Intelligence & Machine Learning at **Acharya Institute of Technology** (**8.49 CGPA**, 2022–2026)\n• **Core Stack**: Python (TensorFlow, PyTorch, Scikit-Learn), Generative AI (Gemini API), Full-Stack (Django, JS, SQL), Power BI, DevOps\n• **Location**: Bengaluru, Karnataka, India\n• **Contact**: tejaswini.y2004teju@gmail.com | +91 9036877702`;
   }
 
   // 6. EDUCATION / COLLEGE / CGPA
   if (q.includes('education') || q.includes('cgpa') || q.includes('college') || q.includes('university') || q.includes('degree') || q.includes('marks') || q.includes('acharya') || q.includes('puc') || q.includes('sslc') || q.includes('school')) {
-    return `🎓 **Education & Academic Standing**:\n\n• **Bachelor of Engineering (B.E.)**: Artificial Intelligence & Machine Learning at **Acharya Institute of Technology** (2022 – 2026) | **8.41 CGPA**\n• **PUC (12th Grade)**: BGS Gurukula IND PU College (2022) | **91.67%** (PCMB)\n• **SSLC (10th Grade)**: Government Girls PU College (2019 – 2020) | **85.44%**`;
+    return `🎓 **Education & Academic Standing**:\n\n• **Bachelor of Engineering (B.E.)**: Artificial Intelligence & Machine Learning at **Acharya Institute of Technology** (2022 – 2026) | **8.49 CGPA**\n• **PUC (12th Grade)**: BGS Gurukula IND PU College (2022) | **91.67%** (PCMB)\n• **SSLC (10th Grade)**: Government Girls PU College (2019 – 2020) | **85.44%**`;
   }
 
   // 7. SKILLS / TECH STACK
   if (q.includes('skill') || q.includes('stack') || q.includes('python') || q.includes('django') || q.includes('opencv') || q.includes('power bi') || q.includes('c++') || q.includes('language')) {
-    return `🛠️ **Technical Stack & Skills Matrix**:\n\n• 💻 **Programming**: Python, C, C++\n• 🧠 **Data Science & AI**: Machine Learning, Deep Learning, NLP, Computer Vision (OpenCV, Haar Cascade)\n• ⚡ **Databases & Backend**: SQL, MongoDB, Django Framework\n• 📊 **Visualization Tools**: Power BI, Tableau, Matplotlib, Plotly\n• 📦 **Tools & Tech**: GitHub, Jupyter Notebook, Google Colab, DevOps Essentials`;
+    return `🛠️ **Technical Stack & Skills Matrix**:\n\n• 💻 **Programming**: Python, C, C++\n• 🧠 **Data Science & AI**: Machine Learning, Deep Learning, NLP, Generative AI (Google Gemini API, TensorFlow, PyTorch, Scikit-Learn)\n• ⚡ **Databases & Backend**: SQL, MongoDB, Django Framework\n• 📊 **Visualization**: Power BI, Tableau, Plotly, Chart.js\n• 📦 **Tools & Tech**: Git, GitHub, Jupyter Notebook, Google Colab, DevOps`;
   }
 
   // 8. WHATSAPP
@@ -116,15 +116,15 @@ export function generateRAGResponse(query: string): string {
   }
 
   // 10. CERTIFICATIONS
-  if (q.includes('certif') || q.includes('infosys') || q.includes('coursera') || q.includes('linkedin learning') || q.includes('power bi') || q.includes('simplilearn')) {
-    return `🏆 **Verified Professional Certifications**:\n\n1. 📜 **Infosys Springboard**: Introduction to NLP, Basics of Python, Microsoft Power BI, Tableau\n2. 📜 **Coursera**: AI for Everyone, Python Data Structures, Machine Learning with Python, Modern Robotics, Arduino & IoT\n3. 📜 **Simplilearn**: Introduction to Computer Networking\n4. 📜 **LinkedIn Learning**: MS 365 Copilot, Social Media Marketing, Machine Learning Foundations\n5. 📜 **Office Master**: Power BI Workshop Certificate`;
+  if (q.includes('certif') || q.includes('google') || q.includes('ibm') || q.includes('infosys') || q.includes('microsoft') || q.includes('coursera') || q.includes('linkedin learning') || q.includes('power bi')) {
+    return `🏆 **Verified Professional Certifications**:\n\n1. 📜 **Google Data Analytics Professional Certificate**\n2. 📜 **Career Essentials in Generative AI (Microsoft & LinkedIn)**\n3. 📜 **IBM - AI Engineering**\n4. 📜 **Data Engineering Foundations Professional Certificate (IBM)**\n5. 📜 **Infosys Power BI & Infosys Tableau**\n6. 📜 **Machine Learning with Python (Coursera/IBM)**\n7. 📜 **Power BI Workshop Certificates (Office Master)**`;
   }
 
   // 11. ACHIEVEMENTS & EXTRA-CURRICULAR
-  if (q.includes('achieve') || q.includes('theater') || q.includes('theatre') || q.includes('uthkarsh') || q.includes('srushti') || q.includes('kannada') || q.includes('dance') || q.includes('volunteer')) {
-    return `🌟 **Achievements & Leadership**:\n\n• 🎭 **Uthkarsh Abhinaya Theater Group**: Participated in State & National-level competitions and won championship twice!\n• 🤝 **VTU Srushti 2025 Event**: Volunteer coordinator for technical and innovation exchange programs.\n• 🚩 **Kannada Vedike Community**: Active volunteer for community & cultural initiatives.\n• 🎨 **Hobbies**: Dance, Yoga, Theatre & Performing Arts, Sports, Travel, Community Involvement.`;
+  if (q.includes('achieve') || q.includes('theater') || q.includes('theatre') || q.includes('utkarsh') || q.includes('rhythmanya') || q.includes('kannada') || q.includes('dance') || q.includes('volunteer')) {
+    return `🌟 **Achievements & Leadership**:\n\n• 💃 **Utkarsh-Rhythmanya**: Acharya Folk dance team Head\n• 🎭 **Utkarsh-Abhinaya Theatre Club**: National & State-level participant and winner\n• 🚩 **Acharya Kannada Vedike**: Active Member`;
   }
 
   // Default Comprehensive Profile Answer
-  return `👋 **I am Teju AI**, Tejaswini Y's intelligent profile assistant.\n\nHere is a quick overview of **Tejaswini Y**:\n• **Role**: AIML Student | Computer Vision & ML Enthusiast\n• **Education**: B.E. in AI & ML at Acharya Institute of Tech (**8.41 CGPA**)\n• **Projects**: Sustainable Energy SDG-7 Dashboard, Ocular Vision Eye Analysis, Gen-AI Pricing Simulator\n• **Contact**: [tejaswini.y2004teju@gmail.com](mailto:tejaswini.y2004teju@gmail.com) | [+91 9036877702](https://wa.me/919036877702)\n\nAsk me about **Projects**, **Skills**, **Education**, **Certifications**, or **Contact**!`;
+  return `👋 **I am Teju AI**, Tejaswini Y's intelligent profile assistant.\n\nHere is a quick overview of **Tejaswini Y**:\n• **Role**: AIML Graduate | Full Stack Developer @ Mindset IT Solutions\n• **Education**: B.E. in AI & ML at Acharya Institute of Tech (**8.49 CGPA**)\n• **Projects**: Sustainable Energy SDG-7 Dashboard, Ocular Vision Eye Analysis, Gen-AI Pricing Simulator\n• **Contact**: [tejaswini.y2004teju@gmail.com](mailto:tejaswini.y2004teju@gmail.com) | [+91 9036877702](https://wa.me/919036877702)\n\nAsk me about **Projects**, **Skills**, **Education**, **Experience**, **Certifications**, or **Contact**!`;
 }

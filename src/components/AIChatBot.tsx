@@ -320,7 +320,7 @@ export const AIChatBot: React.FC = () => {
   };
 
   return (
-    <div style={{ position: 'fixed', bottom: '24px', right: '24px', zIndex: 300 }}>
+    <div className="ai-chatbot-wrapper" style={{ position: 'fixed', bottom: '24px', right: '24px', zIndex: 300 }}>
       {/* Floating Trigger Button */}
       {!isOpen && (
         <button
@@ -701,6 +701,14 @@ export const AIChatBot: React.FC = () => {
           </form>
         </div>
       )}
+      <style>{`
+        @media (max-width: 640px) {
+          .ai-chatbot-wrapper {
+            bottom: 12px !important;
+            right: 12px !important;
+          }
+        }
+      `}</style>
     </div>
   );
 };

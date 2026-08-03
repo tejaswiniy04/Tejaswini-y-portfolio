@@ -53,7 +53,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenTerminal }) => {
               fontWeight: 600
             }}
           >
-            DATA ANALYST
+            AI & MACHINE LEARNING
           </span>
           <span
             style={{
@@ -65,7 +65,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenTerminal }) => {
               fontWeight: 700
             }}
           >
-            POWER BI & SQL ANALYTICS
+            FULL STACK & AIML SPECIALIST
           </span>
         </div>
 
@@ -115,7 +115,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenTerminal }) => {
             }}
             className="desktop-status"
           >
-            <span>AVAILABLE FOR DATA ANALYST ROLES</span>
+            <span>AVAILABLE FOR AI, ML & DEV ROLES</span>
             <Sparkles size={12} className="red-pulse-star" />
           </div>
 

@@ -71,7 +71,7 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({ isOpen
           content: (
             <div style={{ display: 'grid', gap: '6px', margin: '4px 0', fontFamily: 'var(--font-code)' }}>
               <div><strong style={{ color: 'var(--accent-red-bright)' }}>whoami</strong> — Print Tejaswini Y's background & role</div>
-              <div><strong style={{ color: 'var(--accent-red-bright)' }}>education</strong> — View academic background, college & CGPA (8.41)</div>
+              <div><strong style={{ color: 'var(--accent-red-bright)' }}>education</strong> — View academic background, college & CGPA (8.49)</div>
               <div><strong style={{ color: 'var(--accent-red-bright)' }}>skills</strong> — Display technical stack & proficiency matrix</div>
               <div><strong style={{ color: 'var(--accent-red-bright)' }}>projects</strong> — List featured AIML projects (SDG-7, Ocular Vision, Gen-AI Simulator)</div>
               <div><strong style={{ color: 'var(--accent-red-bright)' }}>leadership</strong> — View theater achievements & volunteer initiatives</div>
