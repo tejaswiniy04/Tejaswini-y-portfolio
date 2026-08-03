@@ -109,7 +109,7 @@ export const Hero: React.FC<HeroProps> = () => {
               marginTop: '2px'
             }}
           >
-            AIML SPECIALIST & DATA ANALYST | PREDICTIVE MODELING
+            AIML SPECIALIST & ASPIRING DATA ANALYST
           </h3>
 
           {/* AI / ML & Data Analytics Tech Pills */}

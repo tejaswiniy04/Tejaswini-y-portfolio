@@ -65,7 +65,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenTerminal }) => {
               fontWeight: 700
             }}
           >
-            DATA ANALYSIS & AI SPECIALIST
+            AIML & ASPIRING DATA ANALYST
           </span>
         </div>
 
