@@ -109,10 +109,10 @@ export const Hero: React.FC<HeroProps> = () => {
               marginTop: '2px'
             }}
           >
-            AI & MACHINE LEARNING GRADUATE | FULL STACK DEVELOPER
+            AIML SPECIALIST & DATA ANALYST | PREDICTIVE MODELING
           </h3>
 
-          {/* AI / ML Tech Pills */}
+          {/* AI / ML & Data Analytics Tech Pills */}
           <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginTop: '2px' }}>
             <span
               style={{
@@ -130,7 +130,7 @@ export const Hero: React.FC<HeroProps> = () => {
               }}
             >
               <TrendingUp size={13} color="var(--accent-red-bright)" />
-              PyTorch & TensorFlow
+              Machine Learning & NLP
             </span>
 
             <span
@@ -149,7 +149,7 @@ export const Hero: React.FC<HeroProps> = () => {
               }}
             >
               <BarChart3 size={13} color="var(--accent-red-bright)" />
-              Generative AI & Gemini API
+              Data Analytics & Power BI
             </span>
 
             <span
@@ -168,7 +168,7 @@ export const Hero: React.FC<HeroProps> = () => {
               }}
             >
               <Database size={13} color="var(--accent-red-bright)" />
-              Full Stack & Django
+              Generative AI & Python
             </span>
           </div>
 

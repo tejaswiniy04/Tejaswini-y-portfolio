@@ -53,7 +53,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenTerminal }) => {
               fontWeight: 600
             }}
           >
-            AI & MACHINE LEARNING
+            AIML & DATA ANALYTICS
           </span>
           <span
             style={{
@@ -65,7 +65,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenTerminal }) => {
               fontWeight: 700
             }}
           >
-            FULL STACK & AIML SPECIALIST
+            DATA ANALYSIS & AI SPECIALIST
           </span>
         </div>
 
