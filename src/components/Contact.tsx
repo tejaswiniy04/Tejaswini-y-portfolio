@@ -13,7 +13,7 @@ export const Contact: React.FC = () => {
     },
     {
       label: 'LINKEDIN PROFILE',
-      value: 'tejaswini-y-80a93025a',
+      value: 'tejaswini--y',
       href: PERSONAL_INFO.linkedin,
       icon: LinkedinIcon
     },
