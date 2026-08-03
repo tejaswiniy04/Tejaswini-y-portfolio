@@ -162,11 +162,11 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({ isOpen
           type: 'success',
           content: (
             <div style={{ fontFamily: 'var(--font-code)' }}>
-              📄 Opening official Resume... <a href="/Tejaswini_Y_Resume.pdf" download target="_blank" style={{ color: 'var(--accent-red-bright)', textDecoration: 'underline' }}>Download Tejaswini_Y_Resume.pdf</a>
+              📄 Opening official Resume... <a href={`${import.meta.env.BASE_URL}Tejaswini_Y_Resume.pdf`} download target="_blank" style={{ color: 'var(--accent-red-bright)', textDecoration: 'underline' }}>Download Tejaswini_Y_Resume.pdf</a>
             </div>
           )
         });
-        window.open('/Tejaswini_Y_Resume.pdf', '_blank');
+        window.open(`${import.meta.env.BASE_URL}Tejaswini_Y_Resume.pdf`, '_blank');
         break;
 
       case 'hire':

@@ -130,7 +130,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenTerminal }) => {
           </button>
 
           <a
-            href="/Tejaswini_Y_Resume.pdf"
+            href={`${import.meta.env.BASE_URL}Tejaswini_Y_Resume.pdf`}
             download="Tejaswini_Y_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"

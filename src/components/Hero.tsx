@@ -244,9 +244,9 @@ export const Hero: React.FC<HeroProps> = () => {
 
           {/* User's Authentic Portrait Image */}
           <img
-            src="/tejaswini.png"
+            src={`${import.meta.env.BASE_URL}tejaswini.png`}
             onError={(e) => {
-              (e.currentTarget as HTMLImageElement).src = '/tejaswini.jpg';
+              (e.currentTarget as HTMLImageElement).src = `${import.meta.env.BASE_URL}tejaswini.jpg`;
             }}
             alt="Tejaswini Y Portrait"
             style={{

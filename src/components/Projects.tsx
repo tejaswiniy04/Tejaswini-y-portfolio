@@ -8,27 +8,29 @@ import { ScrollReveal } from './ScrollReveal';
 export const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
+  const base = import.meta.env.BASE_URL;
+
   const displayProjects = [
     {
       ...PROJECTS[0],
       number: '01',
       title: 'SDG-7 FORECASTING',
       category: 'DJANGO & ML ENERGY DASHBOARD',
-      image: '/sdg7_cover.png'
+      image: `${base}sdg7_cover.png`
     },
     {
       ...PROJECTS[1],
       number: '02',
       title: 'OCULAR VISION',
       category: 'COMPUTER VISION EYE ANALYSIS',
-      image: '/ocular_cover.png'
+      image: `${base}ocular_cover.png`
     },
     {
       ...PROJECTS[2],
       number: '03',
       title: 'GEN-AI PRICING SIMULATOR',
       category: 'GENERATIVE AI & ELASTICITY MODELING',
-      image: '/genai_pricing_cover.png'
+      image: `${base}genai_pricing_cover.png`
     }
   ];
 

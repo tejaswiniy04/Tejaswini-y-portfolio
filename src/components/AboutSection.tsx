@@ -126,9 +126,9 @@ export const AboutSection: React.FC = () => {
                 }}
               >
                 <img
-                  src="/tejaswini.jpg"
+                  src={`${import.meta.env.BASE_URL}tejaswini.jpg`}
                   onError={(e) => {
-                    (e.currentTarget as HTMLImageElement).src = '/tejaswini.png';
+                    (e.currentTarget as HTMLImageElement).src = `${import.meta.env.BASE_URL}tejaswini.png`;
                   }}
                   alt="Tejaswini Y"
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }}

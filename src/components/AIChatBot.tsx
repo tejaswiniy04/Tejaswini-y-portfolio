@@ -169,7 +169,7 @@ export const AIChatBot: React.FC = () => {
   const handleActionClick = (action: ActionItem) => {
     switch (action.type) {
       case 'download_resume':
-        window.open('/Tejaswini_Y_Resume.pdf', '_blank');
+        window.open(`${import.meta.env.BASE_URL}Tejaswini_Y_Resume.pdf`, '_blank');
         setMessages((prev) => [
           ...prev,
           {

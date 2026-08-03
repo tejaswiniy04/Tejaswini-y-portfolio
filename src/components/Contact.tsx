@@ -298,7 +298,7 @@ export const Contact: React.FC = () => {
           }}
         >
           <img
-            src="/workspace.png"
+            src={`${import.meta.env.BASE_URL}workspace.png`}
             alt="Workspace Showcase"
             style={{
               width: '100%',
