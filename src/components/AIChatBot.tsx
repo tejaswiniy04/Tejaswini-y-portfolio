@@ -30,19 +30,20 @@ export const AIChatBot: React.FC = () => {
   const [speakingId, setSpeakingId] = useState<string | null>(null);
 
   const initialWelcomeActions: ActionItem[] = [
+    { label: 'Experience & Role', type: 'ask_question', payload: 'Tell me about your work experience at Mindset IT Solutions' },
     { label: 'SDG-7 Energy Project', type: 'ask_question', payload: 'Tell me about Sustainable Energy SDG-7 project' },
-    { label: 'Ocular Vision', type: 'ask_question', payload: 'Tell me about Ocular Vision project' },
-    { label: 'WhatsApp', type: 'open_url', payload: PERSONAL_INFO.whatsappUrl },
+    { label: 'Gen-AI Pricing Simulator', type: 'ask_question', payload: 'Tell me about Gen AI Synthetic Customer & Pricing Scenario Simulator' },
     { label: 'Academics & CGPA', type: 'ask_question', payload: 'What is your CGPA & College details?' },
     { label: 'Certifications', type: 'ask_question', payload: 'What certifications do you have?' },
-    { label: 'Resume PDF', type: 'download_resume' }
+    { label: 'WhatsApp Chat', type: 'open_url', payload: PERSONAL_INFO.whatsappUrl },
+    { label: 'Download Resume', type: 'download_resume' }
   ];
 
   const [messages, setMessages] = useState<Message[]>([
     {
       id: 'welcome-teju-ai',
       sender: 'bot',
-      text: "Greetings! 👋 I'm Teju AI, powered by Gemini 2.5 Flash.\n\nAsk me anything about Tejaswini's AIML projects, skills, academic record, or certifications!",
+      text: "Greetings! 👋 I'm Teju AI, powered by Gemini.\n\nAsk me anything about Tejaswini's AIML projects, Data Analytics skills, Mindset IT Solutions experience, or certifications!",
       timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       actions: initialWelcomeActions
     }
@@ -52,13 +53,13 @@ export const AIChatBot: React.FC = () => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const quickPrompts = [
+    'Tell me about your work experience at Mindset IT Solutions',
     'Tell me about Sustainable Energy SDG-7 project',
-    'Tell me about Ocular Vision project',
-    'How to chat on WhatsApp?',
-    'What is your tech stack?',
+    'Tell me about Gen AI Synthetic Customer & Pricing Scenario Simulator',
+    'What is your technical stack & skills?',
     'What is your CGPA & College?',
-    'What are your certifications?',
-    'How can I contact Tejaswini?'
+    'What professional certifications do you have?',
+    'How to chat on WhatsApp?'
   ];
 
   const getContextualActions = (query: string): ActionItem[] => {

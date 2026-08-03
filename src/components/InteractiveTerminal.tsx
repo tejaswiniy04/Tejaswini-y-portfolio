@@ -71,11 +71,12 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({ isOpen
           content: (
             <div style={{ display: 'grid', gap: '6px', margin: '4px 0', fontFamily: 'var(--font-code)' }}>
               <div><strong style={{ color: 'var(--accent-red-bright)' }}>whoami</strong> — Print Tejaswini Y's background & role</div>
+              <div><strong style={{ color: 'var(--accent-red-bright)' }}>experience</strong> — View work experience @ Mindset IT Solutions</div>
               <div><strong style={{ color: 'var(--accent-red-bright)' }}>education</strong> — View academic background, college & CGPA (8.49)</div>
               <div><strong style={{ color: 'var(--accent-red-bright)' }}>skills</strong> — Display technical stack & proficiency matrix</div>
               <div><strong style={{ color: 'var(--accent-red-bright)' }}>projects</strong> — List featured AIML projects (SDG-7, Ocular Vision, Gen-AI Simulator)</div>
-              <div><strong style={{ color: 'var(--accent-red-bright)' }}>leadership</strong> — View theater achievements & volunteer initiatives</div>
-              <div><strong style={{ color: 'var(--accent-red-bright)' }}>certifications</strong> — Display verified credentials (Infosys, Coursera, etc.)</div>
+              <div><strong style={{ color: 'var(--accent-red-bright)' }}>leadership</strong> — View theater & folk dance leadership activities</div>
+              <div><strong style={{ color: 'var(--accent-red-bright)' }}>certifications</strong> — Display verified credentials (Google, IBM, Microsoft, etc.)</div>
               <div><strong style={{ color: 'var(--accent-red-bright)' }}>socials</strong> — WhatsApp, LinkedIn & GitHub links</div>
               <div><strong style={{ color: 'var(--accent-red-bright)' }}>contact</strong> — Show email, phone & location</div>
               <div><strong style={{ color: 'var(--accent-red-bright)' }}>resume</strong> — Download official resume PDF</div>
@@ -95,11 +96,29 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({ isOpen
           type: 'output',
           content: (
             <div>
-              <p style={{ color: '#fff', fontWeight: 700 }}>{PERSONAL_INFO.name} — {PERSONAL_INFO.role}</p>
+              <p style={{ color: '#fff', fontWeight: 700 }}>{PERSONAL_INFO.name} — Aspiring Data Analyst & AIML Engineer</p>
               <p style={{ color: 'var(--text-body)', marginTop: '4px' }}>{PERSONAL_INFO.summary}</p>
               <p style={{ color: 'var(--accent-red-bright)', marginTop: '6px', fontSize: '0.825rem', fontFamily: 'var(--font-code)' }}>
                 College: {PERSONAL_INFO.education.institution} | Degree: {PERSONAL_INFO.education.degree} | CGPA: {PERSONAL_INFO.education.cgpa}
               </p>
+            </div>
+          )
+        });
+        break;
+
+      case 'experience':
+      case 'work':
+      case 'job':
+      case 'exp':
+        newHistory.push({
+          id: Math.random().toString(),
+          type: 'output',
+          content: (
+            <div style={{ fontFamily: 'var(--font-code)', fontSize: '0.85rem' }}>
+              <div style={{ color: 'var(--accent-red-bright)', fontWeight: 'bold' }}>💼 Full Stack Developer @ Mindset IT Solutions (Bengaluru, Karnataka)</div>
+              <div style={{ color: '#fff', marginTop: '3px' }}>• Built responsive full-stack web applications using frontend and backend technologies.</div>
+              <div style={{ color: '#fff' }}>• Collaborated with team to build, test, debug, and deploy web application features.</div>
+              <div style={{ color: 'var(--text-muted)', fontSize: '0.8rem', marginTop: '3px' }}>Tech: Python, JavaScript, Django, SQL, Git, HTML/CSS</div>
             </div>
           )
         });
@@ -115,7 +134,7 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({ isOpen
               <div style={{ color: 'var(--accent-red-bright)', fontWeight: 'bold' }}>🎓 Acharya Institute of Technology (2022 – 2026)</div>
               <div style={{ color: '#fff' }}>B.E. in Artificial Intelligence & Machine Learning | CGPA: {PERSONAL_INFO.education.cgpa}</div>
               <div style={{ color: 'var(--text-muted)', fontSize: '0.8rem', marginTop: '4px' }}>
-                • Focus: AI & ML Algorithms, Computer Vision (OpenCV), Natural Language Processing, Data Analytics.
+                • Focus: Machine Learning, Deep Learning, NLP, Generative AI, SQL Databases, Data Visualization, Computer Vision.
               </div>
               <div style={{ marginTop: '6px', color: 'var(--text-body)' }}>• PUC (12th Grade): BGS Gurukula IND PU College (91.67%)</div>
               <div style={{ color: 'var(--text-body)' }}>• SSLC (10th Grade): Government Girls PU College (85.44%)</div>
@@ -132,9 +151,9 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({ isOpen
           type: 'output',
           content: (
             <div style={{ fontFamily: 'var(--font-code)', fontSize: '0.85rem' }}>
-              <div style={{ color: 'var(--accent-red-bright)', marginBottom: '4px' }}>• <strong>Uthkarsh Abhinaya Theater Group:</strong> State & National Championship Winner (2x Winner)</div>
-              <div style={{ color: '#FFFFFF', marginBottom: '4px' }}>• <strong>VTU Srushti 2025 Event:</strong> Volunteer Coordinator</div>
-              <div style={{ color: 'var(--accent-red-bright)' }}>• <strong>Kannada Vedike:</strong> Community & Cultural Volunteer</div>
+              <div style={{ color: 'var(--accent-red-bright)', marginBottom: '4px' }}>• 💃 <strong>Utkarsh-Rhythmanya:</strong> Acharya Folk Dance Team Head</div>
+              <div style={{ color: '#FFFFFF', marginBottom: '4px' }}>• 🎭 <strong>Utkarsh-Abhinaya Theatre Club:</strong> National & State-Level Winner</div>
+              <div style={{ color: 'var(--accent-red-bright)' }}>• 🚩 <strong>Acharya Kannada Vedike:</strong> Active Member</div>
             </div>
           )
         });
@@ -179,7 +198,7 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({ isOpen
             <div style={{ fontFamily: 'var(--font-code)' }}>
               🚀 [SUCCESS] Executed `hire_developer.sh`!
               <br />
-              Candidate: <strong>Tejaswini Y</strong> (AIML Engineer)
+              Candidate: <strong>Tejaswini Y</strong> (AIML Engineer & Aspiring Data Analyst)
               <br />
               Status: <span style={{ color: 'var(--accent-red-bright)', fontWeight: 'bold' }}>OFFER EXTENDED & ACCEPTED! 🎉</span>
             </div>
@@ -193,11 +212,11 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({ isOpen
           type: 'output',
           content: (
             <div style={{ fontFamily: 'var(--font-code)', fontSize: '0.85rem' }}>
-              <div style={{ color: 'var(--accent-red-bright)' }}>[Languages] Python, C, C++</div>
-              <div style={{ color: '#FFFFFF' }}>[Data Science & AI] Machine Learning, Deep Learning, NLP, Computer Vision (OpenCV, Haar Cascade)</div>
-              <div style={{ color: 'var(--accent-red-bright)' }}>[Databases & Backend] Django, SQL, MongoDB</div>
-              <div style={{ color: '#FFFFFF' }}>[Visualization] Power BI, Tableau, Matplotlib, Plotly</div>
-              <div style={{ color: 'var(--accent-red-bright)' }}>[Tools] GitHub, Jupyter Notebook, Google Colab, DevOps Essentials, MS Office</div>
+              <div style={{ color: 'var(--accent-red-bright)' }}>[Programming] Python, C, C++</div>
+              <div style={{ color: '#FFFFFF' }}>[Data Science & AI] Machine Learning, Deep Learning, NLP, Generative AI (Google Gemini API, TensorFlow, PyTorch, Scikit-Learn)</div>
+              <div style={{ color: 'var(--accent-red-bright)' }}>[Databases & Backend] SQL, MongoDB, Django</div>
+              <div style={{ color: '#FFFFFF' }}>[Data Visualization] Power BI, Tableau, Plotly, Chart.js</div>
+              <div style={{ color: 'var(--accent-red-bright)' }}>[Tools & Tech] Git, GitHub, Jupyter Notebook, Google Colab, DevOps, MS Office (Excel, Word, PowerPoint)</div>
             </div>
           )
         });
@@ -227,11 +246,13 @@ export const InteractiveTerminal: React.FC<InteractiveTerminalProps> = ({ isOpen
           type: 'output',
           content: (
             <div style={{ fontFamily: 'var(--font-code)', fontSize: '0.85rem' }}>
-              <div>• Infosys Springboard: Introduction to NLP, Python & Power BI / Tableau</div>
-              <div>• Coursera: AI for Everyone, Python Data Structures, ML with Python, Modern Robotics</div>
-              <div>• Simplilearn: Introduction to Computer Networking</div>
-              <div>• LinkedIn Learning: MS 365 Copilot, Social Media Marketing, ML Foundations</div>
-              <div>• Office Master: Power BI Workshop Certificate</div>
+              <div>• Google Data Analytics Professional Certificate</div>
+              <div>• Career Essentials in Generative AI (Microsoft & LinkedIn)</div>
+              <div>• IBM - AI Engineering</div>
+              <div>• Data Engineering Foundations Professional Certificate (IBM)</div>
+              <div>• Infosys Power BI & Infosys Tableau</div>
+              <div>• Machine Learning with Python (Coursera/IBM)</div>
+              <div>• Power BI Workshop Certificates (Office Master)</div>
             </div>
           )
         });
